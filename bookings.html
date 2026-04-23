@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Letaine Publications</title>
+	<title>Booking a Ticket</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="The Letaine Train Website">
@@ -25,79 +25,73 @@
 
 <body>
 	<header>
-			<div class="row">
-				<div class="col text-center">
-					<div class="textdark" id="publicationstext">
-						<h1>Publications on the Letaine</h1>
-						<h3 id="publiccaption">Collated by Archivist Mishka</h3>
+			<div class="row" id="bookingsheader">
+				<div class="col">
+					<div class="textdark">
+						<h2>The letaine</h2>
 					</div>
 				</div>
 			</div>
+			<div id="bookingticket">
+				<div class="row">
+					<div class="col-md-4 col-sm-5 buttondarkselect">one way</div>
+					<div class="col-md-4 col-sm-5 buttondarkselect">round trip</div>
+					<div class="col-md-2 col-sm-1"></div>
+				</div>
+				<form>
+				<fieldset>
+				<div class="row">
+					<div class="col-lg-2 col-md-1"></div>
+					<div class="col-lg-4 col-md-5 mb-3">
+					<input type="text" id="nameTextInput" class="form-control" placeholder="Full Name">
+				  </div>
+				  <div class="col-lg-4 col-md-5 ml-3 mb-3">
+					<select id="departureSelect" class="form-select">
+					<option hidden>Select Departure</option>
+					  <option>Shanterill</option>
+					  <option>Frasia</option>
+					  <option>Gyrun'jir</option>
+					  <option>Tiluraen</option>
+					  <option>Riesling</option>
+					</select>
+				  </div>
+				</div>
+				  <div class="row">
+					<div class="mb-3">
+						<input type="text" id="destinationTextInput" class="form-control" placeholder="Destination">
+				  	</div>
+				  </div>
+				  <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">book ticket</button>
+				</fieldset>
+			  </form>
+			</div>
 	</header>
 
-<!-- SECTION!!! Newspaper Clippings -->
-<section>
-	<div class="row text-center textdark" id="newspaperdiv">
-		<h3>Newspaper Clippings</h3>
-		<div>
-			
-		</div>
-	</div>
-</section>
 
-<!-- SECTION!!! Advertisements -->
-<section>
-	<div class="row textdark" id="advertdiv">
-		<h3>Advertisements</h3>
-	</div>
-</section>
 
-<!-- SECTION!!! Leaflets -->
-<section>
-	<div class="row textdark" id="leaflets">
-		<h3>Leaflets collected aboard</h3>
-		<!-- add modal -->
-		<div class="col-md-2">
-
-		</div>
-		<div class="col-md-4">
-			<img src="images/octininote1.jpg" alt="octininote1" class="w-100">
-		</div>
-		</div>
-		<div class="col-md-4">
-			<img src="images/octininote2.png" alt="octininote2" class="w-100">
-		</div>
-		<div class="col-md-2">
-
-		</div>
-	</div>
-
-</section>
-
-	<!-- <div id="footer" class="col-12 text-center">
+	<div id="footer" class="col-12 text-center">
 		<div id="footertop" class="row">
 			<div id="footerleft" class="col-md-6">
-				<p>
+				<p class="w-100">
 					<strong>CONTACT US</strong><br>
-					<strong>Email:</strong> letaine.corunder@gmail.com<br>
-					<strong>Method:</strong> A Strong Prayer
+					<strong>Email:</strong> <a href="mailto:letaine.corunder@gmail.com" class="stealth">letaine.corunder@gmail.com</a><br>
+					<strong>Method:</strong> A Sharp Eye
 				</p>
 			</div>
 			<div id="footerright" class="col-md-6">
-				<p>
+				<p class="w-100">
 					<strong>ABOUT THE LETAINE</strong><br>
-					Hiring Process<br>
-					How We Got Our Start
-					</p>
+					Fill the Name<br>
+					With a Prayer
 				</p>
 			</div>
 		</div>
-		<div id="footerbottom"  class="row">
+		<div id="footerbottom" class="row">
 			<div class="col">
 				<p><strong>© 1XXX Corunder Company</strong></p>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<!-- Bootstrap's Javascript Bundle -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

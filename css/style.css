@@ -14,7 +14,7 @@
 
 }
 a {
-    text-decoration:none;	
+    text-decoration: none;	
     font-weight: bold;
     color: #E2C774;
 }
@@ -160,30 +160,68 @@ div.dateplace :nth-child(2) {
     width: 100%;
     overflow: hidden;
 }
+.bookcover {
+    float: left;
+    width: 33.3333%;
+    padding: 2%;
+}
+.bookcover img {
+    width: 100%;
+}
+.bookrow {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 .buttonlight {
     background-color: rgba(217, 217, 217, .26);
     font-family: "Spectral SC", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
-    padding: 7%;
+    padding: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
     color: #FFFFFF;
     border-style: solid;
-    border-color: #FFFFFF,;
+    border-color: #FFFFFF;
 }
 .buttondark {
-    background-color: rgba();
+    background-color: rgba(77, 32, 32, .26);
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    padding: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
+    color: #4D2020;
 }
+.buttondarkselect {
+    margin: 1%;
+    background-color: #90716F;
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 1%;
+    color: #FFFFFF;
+}
+.buttondarkselect:active {
+ background-color: #4D2020;
+}
+
 .carousel-indicators button.thumbnail {
-    margin-left: 0%;
-    width: 100px;
-  }
+    display: block;
+    width: 20vw;
+    transform: translate(-20%);
+}
   .carousel-indicators button.thumbnail:not(.active) {
     opacity: 0.7;
+    width: 20vw;
   }
   .carousel-indicators {
     position: static;
-    width: 100%;
   }
   .carousel-inner {
     border-radius: 1.5rem;
@@ -191,8 +229,12 @@ div.dateplace :nth-child(2) {
 .textdark * {
     color: black;
 }
+.textdark h2 {
+    color: black;
+}
 .employeeicons {
     width: 100%;
+    height: 100%;
     display: block;
 }
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -320,43 +362,8 @@ div.dateplace :nth-child(2) {
     left: 0;
     width: 96%;
 }
-/*.image1 {
-    max-width:23%;
-    margin:1%;
-    float: left;
-}
-.image2 {
-    display: none;
-}
-.location {
-    width: 66.666%;
-    margin-right: 3.333%;
-}
-.location:nth-child(3) {
+/*.location:nth-child(3) {
     color: #fb9f82;
-}
-.merchdescrip {
-    width: 31%;
-    margin:1%;
-    float: left;
-}
-.merchdescrip img {
-    width: 100%;
-}
-.rightalign {
-    text-align: right;
-}
-.ticket {
-    float: right;
-    width:20%;
-    margin: 10% 5% 0% 5%;
-    padding: 1%;
-    background-color: #85cfd8;
-    border-radius: 4px;
-    text-align: center;
-}
-.ticket a {
-    color: black;
 }
 .ticket:hover {
     background-color: #4c4c60;
@@ -418,11 +425,19 @@ iframe.video {
 #amenities {
     margin-top: 2%;
 }
-#employee1, #employee2, #employee3, #employee4, #employee5, #employee6 {
+#bookingsheader {
+    background-color: #FFFCF9;
+}
+#employee1, #employee2, #employee3, #employee4{
     display: block;
-    width: 16%;
+    overflow: hidden;
+    /* width: 16%; */
+    width: 21%;
+    height: 100%;
     margin: 2%;
-    float: left;
+}
+ #employee5, #employee6 {
+    display: none;
 }
 #footer {
     width: 100%;
@@ -447,7 +462,7 @@ iframe.video {
     background-position: center;
     background-repeat: no-repeat;
     object-fit: contain;
-    height: 55rem;
+    height: 100vh;
 }
 #landingtext {
     position: absolute;
@@ -459,10 +474,14 @@ iframe.video {
     width: 100%;
     max-height: 96px;
 }
+#library {
+    height: 100vh;
+}
 #meetthecrew {
     color: black;
     width: 100%;
     margin-right: 0%;
+    height: 100vh;
 }
 #publicationstext h1 {
     padding-bottom: 0%;
@@ -552,6 +571,9 @@ iframe.video {
 #routecaption {
     transform: translate(0%, -4rem);
 }
+#takeyourfill {
+    background-color: black;
+}
 #twinmoons {
     background-color: black;
     width: 100%;
@@ -559,12 +581,157 @@ iframe.video {
     padding: 4%;
 }
 
+.multi-carousel-container {
+    cursor: grab;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /*----------- Quarantining Carousel Styling for Nav Ease -------------*/
+  /* Carousel heading */
+.heading {
+    display: block;
+    text-align: center;
+  }
+  
+  /* Container for the entire carousel */
+  .multi-carousel-container {
+    cursor: grab;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Cursor styles for dragging */
+  .multi-carousel-container.dragging,
+  #multiCarousel.dragging {
+    cursor: grabbing;
+  }
+  
+  /* Wrapper for all slides */
+  .multi-carousel-inner {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  /* Individual slide */
+  .multi-carousel-item,
+  .clone {
+    box-sizing: border-box;
+    flex: 0 0 33.333333%;
+    padding: 0 5px;
+    position: relative; /* Essential for item-number positioning */
+  }
+  
+  /* Control buttons */
+  .multi-carousel-control-prev,
+  .multi-carousel-control-next {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+    width: 40px;
+    z-index: 10;
+  }
+  
+  .multi-carousel-control-prev:hover,
+  .multi-carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .multi-carousel-control-prev {
+    left: 10px;
+  }
+  
+  .multi-carousel-control-next {
+    right: 10px;
+  }
+  
+  /* Image container with dynamic height */
+  .img-container {
+    border-radius: 1.5rem;
+    height: var(--carousel-height, 80vh);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Image styling */
+  .img-container img,
+  #carouselInner img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    pointer-events: none;
+    user-drag: none;
+    width: 100%;
+    -webkit-user-drag: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .img-container:hover img {
+    transform: translateZ(0) scale(1.02);
+  }
+  
+  /* Item number styling - guaranteed visibility */
+  .item-number {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    display: inline-flex;
+    font-size: 120%;
+    font-weight: bold;
+    height: 35px;
+    justify-content: center;
+    left: 1rem;
+    position: absolute;
+    top: 1rem;
+    width: 35px;
+    z-index: 2; /* Higher than default but below controls */
+    /* Isolation prevents z-index context issues */
+    isolation: isolate;
+  }
+  
+  /* Carousel cursor styling */
+  #multiCarousel {
+    cursor: grab;
+    touch-action: pan-y;
+  }
+  
+  /* Disable text selection during drag */
+  #multiCarousel.dragging {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Responsive adjustments for screens smaller than 720px (45em) */
+  @media (max-width: 45em) {
+    .multi-carousel-item,
+    .clone {
+      flex: 0 0 100%;
+    }
+  }
+
 /*--------------------- MEDIA INQUIRIES ---------------------*/
 @media screen and (min-width: 992px) {
     * {
         font-size: 1.5rem;
     }
-
+    #twinmoons {
+        height: 100vh;
+    }
   }
 
   /* EVERYTHING UNDER NEEDS TO BE REMOVED..*/
@@ -617,6 +784,9 @@ iframe.video {
     .flip-card {
         max-width: 29.3333%;
     }
+    .multi-carousel-item, .clone {
+        flex: 0 0 100%;
+    }
     #employee1 {
         width: 29.3333%;
         margin: 2%, 2%, 2%, 18.6666%;
@@ -631,9 +801,6 @@ iframe.video {
     }
     /*#about p {
         font-size: 1rem;
-    }
-    h1 {
-        font-size: 2.7rem;
     }
     .image1 {
         display: none;

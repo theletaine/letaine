@@ -42,6 +42,9 @@
 	<!-- Icon Library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!-- Initializing Scripts -->
+	<script type="text/javascript" 
+        src="javascript/drinkCarousel.js"></script> 
 </head>
 
 <body class="col-12">
@@ -81,8 +84,8 @@
 			<h1>Under the Twin Moons</h1>
 		</div>
 		<div class="row">
-			<div class="col-md-1 col-sm-0"></div>
-			<div class="col-md-6 col-sm-12">
+			<div class="col-md-1"></div>
+			<div class="col-md-5 col-sm-12">
 				<!-- Base Carousel Code sourced from Coding Yaar: https://codepen.io/codingyaar/pen/GRdqBrw-->
 				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-inner">
@@ -99,44 +102,46 @@
 						<img src="images/traincar4.png" class="d-block w-100" alt="traincar4">
 					  </div>
 					</div>
-					<!-- The small bar underneath -->
-					<div class="row carousel-indicators">
-						<div class="col-3">
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active thumbnail" aria-current="true" aria-label="Slide 1">
-								<img src="images/traincar1.png" class="d-block w-100" alt="thumbtraincar1">
-							  </button>
-						</div>
-						<div class="col-3">
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="thumbnail" aria-label="Slide 2">
-								<img src="images/traincar2.png" class="d-block w-100" alt="thumbtraincar2">
-							  </button>
-						</div>
-						<div class="col-3">
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="thumbnail" aria-label="Slide 3">
-								<img src="images/traincar3.png" class="d-block w-100" alt="thumbtraincar3">
-							  </button>
-						</div>
-						<div class="col-3">
-							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="thumbnail" aria-label="Slide 4">
-								<img src="images/traincar4.png" class="d-block w-100" alt="thumbtraincar4">
-							  </button>
-						</div>
-					</div>
-				  </div>
+				</div>				  
 			</div>
-		<!-- The blurb -->
-		<div id="twinmoonsblurb" class="col-md-4 col-sm-12 text-center">
-			<p>Indulge in an experience that can be had nowhere else! 
-			A strong enough prayer will bring us to your doorstep. 
-			As long as there’s land, no rails are necessary for the Letaine to travel.<br>
-			Come aboard Qaore’s one and only cross-continental train.<br>
-			<a href="publications.html">LEARN MORE</a></p>
+				<!-- The blurb -->
+			<div id="twinmoonsblurb" class="col-md-6 col-sm-12 mt-3 text-center">
+				<p>Indulge in an experience that can be had nowhere else! 
+				A strong enough prayer will bring us to your doorstep. 
+				As long as there’s land, no rails are necessary for the Letaine to travel.<br>
+				Come aboard Qaore’s one and only cross-continental train.<br>
+				<a href="publications.html" class="textlink">LEARN MORE</a></p>
+			</div>
 		</div>
+		<div class="row">
+			<!-- The small bar underneath -->
+			<div class="col-1"></div>
+			<div class="col-10 carousel-indicators">
+				<div>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active thumbnail" aria-current="true" aria-label="Slide 1">
+						<img src="images/traincar1.png" class="d-block w-100" alt="thumbtraincar1">
+					  </button>
+				</div>
+				<div>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="thumbnail" aria-label="Slide 2">
+						<img src="images/traincar2.png" class="d-block w-100" alt="thumbtraincar2">
+					  </button>
+				</div>
+				<div>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="thumbnail" aria-label="Slide 3">
+						<img src="images/traincar3.png" class="d-block w-100" alt="thumbtraincar3">
+					  </button>
+				</div>
+				<div>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="thumbnail" aria-label="Slide 4">
+						<img src="images/traincar4.png" class="d-block w-100" alt="thumbtraincar4">
+					  </button>
+				</div>
+			</div>
+			<div class="col-1"></div>
 		</div>
-		
-  </div>
-</div>
-</section>
+	</div>
+</section>		
 
 <!-- SECTION!!! Route -->
 <section>
@@ -154,11 +159,11 @@
 
 <!-- SECTION!!! Meet the Crew -->
 <section>
-	<div class="row text-center textdark" id="meetthecrew">
+	<div class="row text-center" id="meetthecrew">
 			<h1>Meet the Crew</h1>
 			<!-- Employee 1: Conductor-->
-			<div class="row">
-			<div id="employee1">
+			<div id="employee1" class="textdark">
+				<h2>The Conductor</h2>
 				<div class="flip-card">
 					<div class="flip-card-inner">
 					  <div class="flip-card-front" class="employeeicons">
@@ -171,10 +176,10 @@
 					  </div>
 					</div>
 				  </div>
-				  <h2 class="textdark">The Conductor</h2>
 			</div>
 			<!-- Employee 2: Leighton -->
-			<div id="employee2">
+			<div id="employee2" class="textdark">
+				<h2>Latona Leighton</h2>
 				<div class="flip-card">
 					<div class="flip-card-inner">
 					  <div class="flip-card-front" class="employeeicons">
@@ -186,10 +191,10 @@
 					  </div>
 					</div>
 				  </div>
-				  <h2 class="textdark">Latona Leighton</h2>
 			</div>
 			<!-- Employee 3: Sharla-->
-			<div id="employee3">
+			<div id="employee3" class="textdark">
+				<h2>Chef Sharla</h2>
 				<div class="flip-card">
 					<div class="flip-card-inner">
 					  <div class="flip-card-front" class="employeeicons">
@@ -202,10 +207,10 @@
 					  </div>
 					</div>
 				  </div>
-				  <h2 class="textdark">Chef Sharla</h2>
 			</div>
 			<!-- Employee 4: Octini-->
-			<div id="employee4">
+			<div id="employee4" class="textdark">
+				<h2>"Octini"</h2>
 				<div class="flip-card">
 					<div class="flip-card-inner">
 					  <div class="flip-card-front" class="employeeicons">
@@ -217,10 +222,10 @@
 					  </div>
 					</div>
 				  </div>
-				  <h2 class="textdark">"Octini"</h2>
 			</div>
 			<!-- Employee 5: Mol-->
 			<div id="employee5">
+				<h2 class="textdark">Mol</h2>
 				<div class="flip-card">
 					<div class="flip-card-inner">
 					  <div class="flip-card-front" class="employeeicons">
@@ -232,10 +237,10 @@
 					  </div>
 					</div>
 				  </div>
-				  <h2 class="textdark">Mol</h2>
 			</div>
 			<!-- Employee 6: Mishka-->
 			<div id="employee6">
+				<h2 class="textdark">Mishka Montelli</h2>
 				<div class="flip-card">
 					<div class="flip-card-inner">
 					  <div class="flip-card-front" class="employeeicons">
@@ -248,42 +253,119 @@
 					</div>
 				  </div>
 			</div>
-		</div>
+	</div>
 	</div>
 	
 </section>
 
 <!-- SECTION!!! Amenities... -->
-<section>
+<!-- <section>
 	<div class="textdark" id="amenities">
 		<h1>Amenities</h1>
 	</div>
-</section>
+</section> -->
 
 <!-- SECTION!!! Library -->
 <section>
 	<div class="textdark" id="library">
-		<h1> Library</h1>
+		<div class="row">
+			<h1> Library</h1>
+		</div>
+		<div class="row bookrow">
+			<div class="bookcover">
+				<a href="barsideerror1.html">
+					<img src="images/barside-errors1.png" alt="barsideErrorCover1">
+					</a>
+				</div>
+			<div class="bookcover">
+				<a href="barsideerror2.html">
+					<img src="images/barside-errors2.png" alt="barsideErrorCover2">
+					</a>
+				</div>
+			<div class="bookcover">
+				<a href="barsideerror3.html">
+					<img src="images/barside-errors3.png" alt="barsideErrorCover1">
+					</a>
+				</div>
+		</div>
 	</div>
 </section>
 
 <!-- SECTION!!! Take Your Fill -->
 <section>
 	<div class="parallax" id="takeyourfill">
-
+		<h1>Take your Fill</h1>
+		<div class="container-flex">
+			<div class="multi-carousel-container" id="multiCarousel">
+			  <div class="multi-carousel-inner" id="carouselInner">
+				<!-- Original items only -->
+				<div class="multi-carousel-item" data-index="0">
+				  <div class="img-container">
+					<img src="images/menu2.png" alt="Image 1">
+				  </div>
+				</div>
+				<div class="multi-carousel-item" data-index="1">
+				  <div class="img-container">
+					<img src="images/menu3.png" alt="Image 2">
+				  </div>
+				</div>
+				<div class="multi-carousel-item" data-index="2">
+				  <div class="img-container">
+					<img src="images/menu7.png" alt="Image 3">
+				  </div>
+				</div>
+				<div class="multi-carousel-item" data-index="3">
+				  <div class="img-container">
+					<img src="images/menu10.png" alt="Image 4">
+				  </div>
+				</div>
+				<div class="multi-carousel-item" data-index="4">
+				  <div class="img-container">
+					<img src="images/menu11.png" alt="Image 5">
+				  </div>
+				</div>
+				<!-- <div class="multi-carousel-item" data-index="5">
+				  <div class="img-container"><span class="item-number">6</span>
+					<img src="https://images.piclumen.com/community/20250326/14/a29c1ea3-d174-47b4-b7b4-9c9e5af80ea8.webp" alt="Image 6">
+				  </div>
+				</div>
+				<div class="multi-carousel-item" data-index="6">
+				  <div class="img-container"><span class="item-number">7</span>
+					<img src="https://images.piclumen.com/community/20250326/11/2871590f-5896-4824-8f27-00ebb20e9bd3.webp" alt="Image 7">
+				  </div>
+				</div>
+				<div class="multi-carousel-item" data-index="7">
+				  <div class="img-container"><span class="item-number">8</span>
+					<img src="https://images.piclumen.com/community/20250326/11/a8638ee6-5768-4b9f-87c1-bdebdc78b597.webp" alt="Image 8">
+				  </div>
+				</div>
+				<div class="multi-carousel-item" data-index="8">
+				  <div class="img-container"><span class="item-number">9</span>
+					<img src="https://images.piclumen.com/community/20250325/13/a70ce527-4c30-45f2-8fcd-8c80f3b86a7c.webp" alt="Image 9">
+				  </div>
+				</div> -->
+			  </div>
+		  
+			  <button class="multi-carousel-control-prev" id="prevBtn">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  </button>
+			  <button class="multi-carousel-control-next" id="nextBtn">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  </button>
+			</div>
+		  </div>
 	</div>
 </section>
 
 <!-- SECTION!!! Inspector's Note -->
 <section>
-
+	<img src="" alt="">
 </section>
 
 <!-- SECTION!!! Passenger Testimonies -->
 <section>
 
 </section>
-
 	<div id="footer" class="col-12 text-center">
 		<div id="footertop" class="row">
 			<div id="footerleft" class="col-md-6">
@@ -297,18 +379,21 @@
 				<p class="w-100">
 					<strong>ABOUT THE LETAINE</strong><br>
 					Hiring Process<br>
-					How We Got Our Start
+					<a href="about.html" class="stealth">We Got Our Start</a>
 				</p>
 			</div>
 		</div>
 		<div id="footerbottom" class="row">
-			<div class="col">
-				<p><strong>© 1XXX Corunder Company</strong></p>
+			<div class="col-12">
+				<strong>© 1XXX Corunder Company</strong>
 			</div>
 		</div>
 	</div>
 	<!-- Bootstrap's Javascript Bundle -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	<!-- Slick jQuery Library -->
+	<script src="/path/to/jquery.min.js"></script>	
+	<script src="/path/to/slick.js"></script>
 </body>
 
 </html>
