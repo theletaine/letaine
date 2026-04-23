@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- 
+	Divs:
+	Logo
+	Landing
+	Under Twin Moons
+	Route
+	Meet the Crew
+	Amenities...
+		Library
+		Take Your Fill
+	Inspector Testimonial
+	Passenger Testimonies
+		Add your own
+	Footer
+	-->
+
+	<!-- TO DO:
+		style href (links)
+		create publications page
+		migrate all "style" notes to stylesheet
+	-->
+<html lang="en">
+
+<head>
+	<title>The Letaine</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The Letaine Train Website">
+	<meta name="keywords" content="HTML,CSS,JS,Bootstrap">
+	<meta name="author" content="Ann Chong">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<!--spectral-->
+		<link 
+			href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<!--spectral SC-->
+		<link 
+			href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<!-- Icon Library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body class="col-12">
+	<header>
+		<div id="landingbg">
+			<div class="row">
+				<div class="col">
+					<div id="landingtext">
+						<h2> Est. in ixxx</h2>
+						<h1>The letaine</h1>
+						<!--<div id="letainesignage">
+							<img src="images/letainetitle.png" alt="The Letaine Title">
+						</div>-->
+						<p>
+							<h2 class="subhead">the corunder company</h2>
+							<br>
+							<br>
+							<a class="buttonlight" href="bookings.html">Take a seat</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-12">
+					<a href="#twinmoons">
+						<div class="pulse">
+							<!-- clickable triangle indicator -->
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- SECTION!!! Under Twin Moons -->
+<section>
+	<div id="twinmoons">
+		<div class="row text-center">
+			<h1>Under the Twin Moons</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-1 col-sm-0"></div>
+			<div class="col-md-6 col-sm-12">
+				<!-- Base Carousel Code sourced from Coding Yaar: https://codepen.io/codingyaar/pen/GRdqBrw-->
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="images/traincar1.png" class="d-block w-100" alt="traincar1">
+					  </div>
+					  <div class="carousel-item">
+						<img src="images/traincar2.png" class="d-block w-100" alt="traincar2">
+					  </div>
+					  <div class="carousel-item">
+						<img src="images/traincar3.png" class="w-100" alt="traincar3">
+					  </div>
+					  <div class="carousel-item">
+						<img src="images/traincar4.png" class="d-block w-100" alt="traincar4">
+					  </div>
+					</div>
+					<!-- The small bar underneath -->
+					<div class="row carousel-indicators">
+						<div class="col-3">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active thumbnail" aria-current="true" aria-label="Slide 1">
+								<img src="images/traincar1.png" class="d-block w-100" alt="thumbtraincar1">
+							  </button>
+						</div>
+						<div class="col-3">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="thumbnail" aria-label="Slide 2">
+								<img src="images/traincar2.png" class="d-block w-100" alt="thumbtraincar2">
+							  </button>
+						</div>
+						<div class="col-3">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="thumbnail" aria-label="Slide 3">
+								<img src="images/traincar3.png" class="d-block w-100" alt="thumbtraincar3">
+							  </button>
+						</div>
+						<div class="col-3">
+							<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="thumbnail" aria-label="Slide 4">
+								<img src="images/traincar4.png" class="d-block w-100" alt="thumbtraincar4">
+							  </button>
+						</div>
+					</div>
+				  </div>
+			</div>
+		<!-- The blurb -->
+		<div id="twinmoonsblurb" class="col-md-4 col-sm-12 text-center">
+			<p>Indulge in an experience that can be had nowhere else! 
+			A strong enough prayer will bring us to your doorstep. 
+			As long as there’s land, no rails are necessary for the Letaine to travel.<br>
+			Come aboard Qaore’s one and only cross-continental train.<br>
+			<a href="publications.html">LEARN MORE</a></p>
+		</div>
+		</div>
+		
+  </div>
+</div>
+</section>
+
+<!-- SECTION!!! Route -->
+<section>
+	<div class="col-12 textdark">
+		<div class="parent" id="route">
+			<img src="images/route-track.png" alt="track" class="track">
+			<div class="overlaytext">
+				<h1>Route</h1>
+			</div>
+		</div>
+		<p id="routecaption">Our destination lies where your heart desires.</p>
+	</div>
+	
+</section>
+
+<!-- SECTION!!! Meet the Crew -->
+<section>
+	<div class="row text-center textdark" id="meetthecrew">
+			<h1>Meet the Crew</h1>
+			<!-- Employee 1: Conductor-->
+			<div class="row">
+			<div id="employee1">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front" class="employeeicons">
+						<img src="images/employee1.png" alt="avatar1" class="w-100">
+					  </div>
+					  <div class="flip-card-back">
+						<p></p>
+						<p>The head and maestro of the Letaine. 
+							Previously the commander of trade ships, now a authority on luxury.</p>
+					  </div>
+					</div>
+				  </div>
+				  <h2 class="textdark">The Conductor</h2>
+			</div>
+			<!-- Employee 2: Leighton -->
+			<div id="employee2">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front" class="employeeicons">
+						<img src="images/employee2.png" alt="avatar2" class="w-100">
+					  </div>
+					  <div class="flip-card-back">
+						<p></p>
+						<p>The in-car librarian ready to recommend stories if you tire of making your own.</p>
+					  </div>
+					</div>
+				  </div>
+				  <h2 class="textdark">Latona Leighton</h2>
+			</div>
+			<!-- Employee 3: Sharla-->
+			<div id="employee3">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front" class="employeeicons">
+						<img src="images/employee3.png" alt="avatar3" class="w-100">
+					  </div>
+					  <div class="flip-card-back">
+						<p></p>
+						<p>Gastronomer extraordinaire! 
+							The former head chef that designed menus for Liering royalty.</p>
+					  </div>
+					</div>
+				  </div>
+				  <h2 class="textdark">Chef Sharla</h2>
+			</div>
+			<!-- Employee 4: Octini-->
+			<div id="employee4">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front" class="employeeicons">
+						<img src="images/employee4.png" alt="avatar4" class="w-100">
+					  </div>
+					  <div class="flip-card-back">
+						<p></p>
+						<p>Resident<br> bartender with an avant-garde taste and inventive mind.</p>
+					  </div>
+					</div>
+				  </div>
+				  <h2 class="textdark">"Octini"</h2>
+			</div>
+			<!-- Employee 5: Mol-->
+			<div id="employee5">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front" class="employeeicons">
+						<img src="images/employee5.png" alt="avatar5" class="w-100">
+					  </div>
+					  <div class="flip-card-back">
+						<p></p>
+						<p>Our in-car mailperson! She ensures your letters are delivered with flare.</p>
+					  </div>
+					</div>
+				  </div>
+				  <h2 class="textdark">Mol</h2>
+			</div>
+			<!-- Employee 6: Mishka-->
+			<div id="employee6">
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					  <div class="flip-card-front" class="employeeicons">
+						<img src="images/employee6.png" alt="avatar5" class="w-100">
+					  </div>
+					  <div class="flip-card-back">
+						<p></p>
+						<p>Archivist </p>
+					  </div>
+					</div>
+				  </div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+
+<!-- SECTION!!! Amenities... -->
+<section>
+	<div class="textdark" id="amenities">
+		<h1>Amenities</h1>
+	</div>
+</section>
+
+<!-- SECTION!!! Library -->
+<section>
+	<div class="textdark" id="library">
+		<h1> Library</h1>
+	</div>
+</section>
+
+<!-- SECTION!!! Take Your Fill -->
+<section>
+	<div class="parallax" id="takeyourfill">
+
+	</div>
+</section>
+
+<!-- SECTION!!! Inspector's Note -->
+<section>
+
+</section>
+
+<!-- SECTION!!! Passenger Testimonies -->
+<section>
+
+</section>
+
+	<div id="footer" class="col-12 text-center">
+		<div id="footertop" class="row">
+			<div id="footerleft" class="col-md-6">
+				<p class="w-100">
+					<strong>CONTACT US</strong><br>
+					<strong>Email:</strong> <a href="mailto:letaine.corunder@gmail.com" class="stealth">letaine.corunder@gmail.com</a><br>
+					<strong>Method:</strong> A Strong Prayer
+				</p>
+			</div>
+			<div id="footerright" class="col-md-6">
+				<p class="w-100">
+					<strong>ABOUT THE LETAINE</strong><br>
+					Hiring Process<br>
+					How We Got Our Start
+				</p>
+			</div>
+		</div>
+		<div id="footerbottom" class="row">
+			<div class="col">
+				<p><strong>© 1XXX Corunder Company</strong></p>
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap's Javascript Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
