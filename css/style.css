@@ -127,9 +127,8 @@ div.dateplace :nth-child(2) {
     overflow: hidden;
 }
 .bookcover {
-    float: left;
-    width: 33.3333%;
-    padding: 2%;
+    width: 29.3333%;
+    margin: 2%;
 }
 .bookcover img {
     width: 100%;
