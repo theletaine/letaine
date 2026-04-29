@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Configuration - dynamic based on screen size
     let itemsPerSlide = window.innerWidth < 720 ? 1 : 3; // Responsive items per slide
-    const totalItems = 5; // Total real items (without clones)
+    const totalItems = 12; // Total real items (without clones)
     let slideBy = window.innerWidth < 720 ? 1 : 1; // How many items to advance/retreat per click
   
     // DOM elements
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function setCarouselHeight() {
       // Calculate available height without depending on heading element
       const windowHeight = window.innerHeight;
-      const carouselContainer = carousel.closest(".container-fluid");
+      const carouselContainer = carousel.closest(".row");
   
       // Get the carousel container's offset from top
       const containerRect = carouselContainer
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const translateX = (position * -100) / itemsPerSlide;
       carouselInner.style.transform = `translateX(${translateX}%)`;
     }
-  
+
     // Initialize position
     updateCarouselPosition(false);
   

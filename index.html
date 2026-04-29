@@ -38,8 +38,10 @@
 		<!--spectral SC-->
 		<link 
 			href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">	<!-- Bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-	<!-- Icon Library -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<!-- shadows into light -->
+		<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+		<!-- Icon Library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<!-- Initializing Scripts -->
@@ -210,7 +212,7 @@
 			</div>
 			<!-- Employee 4: Octini-->
 			<div id="employee4" class="textdark">
-				<h2>"Octini"</h2>
+				<h2> The 24th "Octini"</h2>
 				<div class="flip-card">
 					<div class="flip-card-inner">
 					  <div class="flip-card-front" class="employeeicons">
@@ -268,10 +270,11 @@
 <!-- SECTION!!! Library -->
 <section>
 	<div class="textdark" id="library">
-		<div class="row">
-			<h1> Library</h1>
+		<div class="row w-100">
+				<h1 class="mb-0"> Library</h1>
+				<p class="secret">Leighton's latest recommendations.</p>
 		</div>
-		<div class="row bookrow">
+		<div class="row w-100 bookrow" tabindex="0">
 			<div class="bookcover">
 				<a href="barsideerror1.html">
 					<img src="images/barside-errors1.png" alt="barsideErrorCover1">
@@ -288,6 +291,9 @@
 					</a>
 				</div>
 		</div>
+		<div id="moth" tabindex="-1">
+			<img src="images/moth.gif" alt="mothgif" class="w-100">
+		</div>
 	</div>
 </section>
 
@@ -295,55 +301,70 @@
 <section>
 	<div class="parallax" id="takeyourfill">
 		<h1>Take your Fill</h1>
-		<div class="container-flex">
+		<p>Enjoy a bespoke cocktail.</p>
 			<div class="multi-carousel-container" id="multiCarousel">
 			  <div class="multi-carousel-inner" id="carouselInner">
 				<!-- Original items only -->
 				<div class="multi-carousel-item" data-index="0">
 				  <div class="img-container">
-					<img src="images/menu2.png" alt="Image 1">
+					<img src="images/menu1.png" alt="Image 1"  data-toggle="modal" data-target="#drink1Modal">
 				  </div>
 				</div>
 				<div class="multi-carousel-item" data-index="1">
 				  <div class="img-container">
-					<img src="images/menu3.png" alt="Image 2">
+					<img src="images/menu2.png" alt="Image 2" data-toggle="modal" data-target="#drink2Modal">
 				  </div>
 				</div>
 				<div class="multi-carousel-item" data-index="2">
 				  <div class="img-container">
-					<img src="images/menu7.png" alt="Image 3">
+					<img src="images/menu3.png" alt="Image 3" data-toggle="modal" data-target="#drink3Modal">
 				  </div>
 				</div>
 				<div class="multi-carousel-item" data-index="3">
 				  <div class="img-container">
-					<img src="images/menu10.png" alt="Image 4">
+					<img src="images/menu4.png" alt="Image 4" data-toggle="modal" data-target="#drink4Modal">
 				  </div>
 				</div>
 				<div class="multi-carousel-item" data-index="4">
 				  <div class="img-container">
-					<img src="images/menu11.png" alt="Image 5">
+					<img src="images/menu5.png" alt="Image 5" data-toggle="modal" data-target="#drink5Modal">
 				  </div>
 				</div>
-				<!-- <div class="multi-carousel-item" data-index="5">
-				  <div class="img-container"><span class="item-number">6</span>
-					<img src="https://images.piclumen.com/community/20250326/14/a29c1ea3-d174-47b4-b7b4-9c9e5af80ea8.webp" alt="Image 6">
-				  </div>
+				<div class="multi-carousel-item" data-index="5">
+					<div class="img-container">
+					  <img src="images/menu6.png" alt="Image 6" data-toggle="modal" data-target="#drink6Modal">
+					</div>
 				</div>
 				<div class="multi-carousel-item" data-index="6">
-				  <div class="img-container"><span class="item-number">7</span>
-					<img src="https://images.piclumen.com/community/20250326/11/2871590f-5896-4824-8f27-00ebb20e9bd3.webp" alt="Image 7">
-				  </div>
+					<div class="img-container">
+					  <img src="images/menu7.png" alt="Image 7" data-toggle="modal" data-target="#drink7Modal">
+					</div>
 				</div>
 				<div class="multi-carousel-item" data-index="7">
-				  <div class="img-container"><span class="item-number">8</span>
-					<img src="https://images.piclumen.com/community/20250326/11/a8638ee6-5768-4b9f-87c1-bdebdc78b597.webp" alt="Image 8">
-				  </div>
+					<div class="img-container">
+					  <img src="images/menu8.png" alt="Image 8" data-toggle="modal" data-target="#drink8Modal">
+					</div>
 				</div>
 				<div class="multi-carousel-item" data-index="8">
-				  <div class="img-container"><span class="item-number">9</span>
-					<img src="https://images.piclumen.com/community/20250325/13/a70ce527-4c30-45f2-8fcd-8c80f3b86a7c.webp" alt="Image 9">
-				  </div>
-				</div> -->
+					<div class="img-container">
+					  <img src="images/menu9.png" alt="Image 9" data-toggle="modal" data-target="#drink9Modal">
+					</div>
+				</div>
+				<div class="multi-carousel-item" data-index="9">
+					<div class="img-container">
+					  <img src="images/menu10.png" alt="Image 10" data-toggle="modal" data-target="#drink10Modal">
+					</div>
+				</div>
+				<div class="multi-carousel-item" data-index="10">
+					<div class="img-container">
+					  <img src="images/menu11.png" alt="Image 11" data-toggle="modal" data-target="#drink11Modal">
+					</div>
+				</div>
+				<div class="multi-carousel-item" data-index="11">
+					<div class="img-container">
+					  <img src="images/menu12.png" alt="Image 12" data-toggle="modal" data-target="#drink12Modal">
+					</div>
+				</div>
 			  </div>
 		  
 			  <button class="multi-carousel-control-prev" id="prevBtn">
@@ -353,38 +374,109 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			  </button>
 			</div>
+			<div id="barmore" class="w-100">
+				<p>Entrust yourself in a dream concocted by our master mixologist. The bar car has numerous offerings.</p>
+				<h1 id="ellipses">
+				.<br>
+				.<br>
+				.
+				</h1>
+				<a href="baranecdotes.html" class="textlink">LEARN MORE?</a></p>
+			</div>
+			<div id="invis" class="w-100">
+				
+			</div>
+			<!-- A wide list of indiv. drink modals -->
+	<!-- <div class="modal fade" id="drink1Modal" tabindex="-1" role="dialog" aria-labelledby="drink1Modal" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLongTitle">Matcha Pisco</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  ...
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			</div>
 		  </div>
-	</div>
-</section>
+		</div>
+	  </div>
+	</div> -->
+	
 
 <!-- SECTION!!! Inspector's Note -->
-<section>
-	<img src="" alt="">
+	<div id="inspector">
+		<div id="notebg">
+		<img src="images/notebg.png" alt="notebg" class="w-100">
+		</div>
+		<div id="inspectornote" class="textdark">
+			<p>The staff always smells of smoke. And I’ve wandered to the engineer’s car to compare the scent. They’re not smelling of coal or diesel. It’s fully fledged darts. I’m of the opinion that those who wish to choke on cigarettes are free to do so, but to do so in an enclosed space means you have the manners of an ass. Would you like an ass to serve your drinks? Your meals? No? Wise of you. I’d agree.
+				I’ve heard the conductor banned and labeled such items “employee contraband.” Yet he fails to keep the staff under his watch. The fact that the leader of such a machine is losing control over his gears and spokes means there’s much running amok within the chassis.
+				Yet, I will reserve some praise for the impressive machinations of the engine. It runs smoothly, with barely any dark smoke visible from the circular panel of glass I’d viewed it through. This is just my second day aboard the Letaine. There is plenty to uncover. Follow my soon-to-be lengthy review to learn of the operations of this cross-continental train.
+			</p>
+		</div>
+	</div>
 </section>
 
 <!-- SECTION!!! Passenger Testimonies -->
 <section>
-
+	<div id="testimonies" class="textdark">
+		<div class="row w-100">
+			<h1>Passenger testimonies</h1>
+		</div>
+		<div class="row w-100">
+			<div class="passengertest">
+				<p>It feels impossible, the way the wheels run over water or rock the same.
+					<br><br><strong>—Testimonial from Orley</strong></p>
+			</div>
+			<div class="passengertest">
+				<p>A positively dreamy holiday getaway. My husband still raves about their full course breakfast. Personally, I can’t forget the silk sheets.
+					<br><br><strong>—Testimonial from Nina</strong></p>
+			</div>
+			<div class="passengertest">
+				<p>A comfortable place after the loss of my land and town. Otherwise, these old bones wouldn't carry me far enough.
+					<br><br><strong>—Testimonial from Ms. Jaranda</strong></p>
+			</div>
+		</div>
+		<div class="w-100">
+			<h4>Have your own? Go ahead!</h4>
+			<div class="w-100">
+				<div class="form-group">				
+				<textarea class="form-control" id="reviewTextArea" rows="10"></textarea>
+				<br>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			  	</div>
+			</div>
+		</div>
+			<br>
+			<br>
+	</div>
 </section>
-	<div id="footer" class="col-12 text-center">
-		<div id="footertop" class="row">
+
+	<div id="footer" class="text-center">
+		<div id="footertop" class="row w-100">
 			<div id="footerleft" class="col-md-6">
-				<p class="w-100">
+				<p class="w-100 mt-3">
 					<strong>CONTACT US</strong><br>
 					<strong>Email:</strong> <a href="mailto:letaine.corunder@gmail.com" class="stealth">letaine.corunder@gmail.com</a><br>
 					<strong>Method:</strong> A Strong Prayer
 				</p>
 			</div>
 			<div id="footerright" class="col-md-6">
-				<p class="w-100">
+				<p class="w-100 mt-3">
 					<strong>ABOUT THE LETAINE</strong><br>
 					Hiring Process<br>
-					<a href="about.html" class="stealth">We Got Our Start</a>
+					<a href="about.html" class="stealth">How We Got Our Start</a>
 				</p>
 			</div>
 		</div>
-		<div id="footerbottom" class="row">
-			<div class="col-12">
+		<div id="footerbottom" class="row w-100">
+			<div class="col-12 mt-3 mb-3">
 				<strong>© 1XXX Corunder Company</strong>
 			</div>
 		</div>

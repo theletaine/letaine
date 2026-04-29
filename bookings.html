@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-
+<!-- TO DO:
+	style modal
+-->
 <head>
-	<title>Booking a Ticket</title>
+	<title>Booking a Ticket?</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="The Letaine Train Website">
@@ -25,7 +27,7 @@
 
 <body>
 	<header>
-			<div class="row" id="bookingsheader">
+			<div class="row w-100" id="bookingsheader">
 				<div class="col">
 					<div class="textdark">
 						<h2>The letaine</h2>
@@ -33,19 +35,17 @@
 				</div>
 			</div>
 			<div id="bookingticket">
-				<div class="row">
-					<div class="col-md-4 col-sm-5 buttondarkselect">one way</div>
-					<div class="col-md-4 col-sm-5 buttondarkselect">round trip</div>
-					<div class="col-md-2 col-sm-1"></div>
+				<div id="bookingselect">
+					<div id="onewaybutton" class="buttondarkselect">one way</div>
+					<div id="roundtripbutton" class="buttondarkselect">round trip</div>
 				</div>
 				<form>
 				<fieldset>
-				<div class="row">
-					<div class="col-lg-2 col-md-1"></div>
-					<div class="col-lg-4 col-md-5 mb-3">
+				<div class="form-row w-100">
+					<div class="col">
 					<input type="text" id="nameTextInput" class="form-control" placeholder="Full Name">
 				  </div>
-				  <div class="col-lg-4 col-md-5 ml-3 mb-3">
+				  <div class="c">
 					<select id="departureSelect" class="form-select">
 					<option hidden>Select Departure</option>
 					  <option>Shanterill</option>
@@ -56,26 +56,48 @@
 					</select>
 				  </div>
 				</div>
-				  <div class="row">
+				  <div class="row w-100">
 					<div class="mb-3">
 						<input type="text" id="destinationTextInput" class="form-control" placeholder="Destination">
 				  	</div>
 				  </div>
+				  <!-- Button Trigger Modal -->
 				  <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">book ticket</button>
 				</fieldset>
 			  </form>
 			</div>
+			<!-- Modal that pops up to confirm booking -->
+			<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingTicketModal" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h2 class="modal-title" id="exampleModalLongTitle">Thank you for booking!</h2>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body">
+					  ...
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					  <button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				  </div>
+				</div>
 	</header>
 
 
 
 	<div id="footer" class="col-12 text-center">
-		<div id="footertop" class="row">
+		<div id="footertop" class="row w-100">
 			<div id="footerleft" class="col-md-6">
 				<p class="w-100">
 					<strong>CONTACT US</strong><br>
 					<strong>Email:</strong> <a href="mailto:letaine.corunder@gmail.com" class="stealth">letaine.corunder@gmail.com</a><br>
-					<strong>Method:</strong> A Sharp Eye
+					<strong>Method:</strong> <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="An Inspector Isidore went missing aboard the Letaine.">
+						A Sharp Eye
+					  </button>
 				</p>
 			</div>
 			<div id="footerright" class="col-md-6">
@@ -86,7 +108,7 @@
 				</p>
 			</div>
 		</div>
-		<div id="footerbottom" class="row">
+		<div id="footerbottom" class="row w-100">
 			<div class="col">
 				<p><strong>© 1XXX Corunder Company</strong></p>
 			</div>
