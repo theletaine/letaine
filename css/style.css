@@ -296,6 +296,9 @@ div.dateplace :nth-child(2) {
     text-align: center;
     font-size: 1.5rem;
 }
+.modal * {
+    color: black;
+}
 .overlaytext {
     position: relative;
     top: 0%;
@@ -329,7 +332,6 @@ div.dateplace :nth-child(2) {
     padding-top: 5%;
     padding-bottom: 5%;
     width: 25.333%;
-    transform: translateX(5%);
     background-color: #FCF8F8;
 }
 .pulse {
@@ -421,7 +423,12 @@ div.dateplace :nth-child(2) {
 }
 #footer {
     position: relative;
-    transform: translateY(130vh);
+    transform: translateY(0vh);
+    width: 100%;
+    background-color: black;
+    z-index: 10;    
+}
+#footerbook {
     width: 100%;
     background-color: black;
     z-index: 10;    
@@ -502,19 +509,48 @@ div.dateplace :nth-child(2) {
     z-index: 10;
     pointer-events: none;
 }
+#newspaper {
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
 #notebg {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-60vh);
+    transform: translateY(-40vh);
     height: 100%;
     overflow: hidden;
     z-index: 2;
 }
+#octininote1 {
+    max-width: 40.5%;
+    margin-left: 9%;
+    margin-right: .5%;
+}
+#octininote2 {
+    max-width: 40.5%;
+    margin-left: .5%;
+    margin-right: 9%;
+}
 #onewaybutton {
     width: 30%; 
     margin-left: 2%; 
-    margin-right: 1%;
+    margin-right: .5%;
+}
+#poster1 {
+    max-width: 41.06%;
+    margin-left: 9%;
+    margin-right: .5%;
+}
+#poster2 {
+    max-width: 39.94%;
+    margin-left: .5%;
+    margin-right: 9%;
+}
+#publicationdiv img {
+    margin-bottom: 10%;
 }
 #roundtripbutton {
     width: 30%; 
@@ -566,7 +602,7 @@ div.dateplace :nth-child(2) {
 }
 #testimonies {
     position: relative;
-    transform: translateY(130vh);
+    transform: translateY(-50vh);
     background-color: #F0E6E0;
     z-index: 1;
 }
@@ -731,7 +767,7 @@ div.dateplace :nth-child(2) {
 
 /*--------------------- MEDIA INQUIRIES ---------------------*/
 @media screen and (min-width: 992px) {
-    * {
+    *, strong {
         font-size: 1.5rem;
     }
     .overlaytext{
@@ -744,7 +780,7 @@ div.dateplace :nth-child(2) {
 
   /* EVERYTHING UNDER NEEDS TO BE REMOVED..*/
   @media screen and (max-width:992px) {
-    * {
+    *, strong {
         font-size: 1.2rem;
     }
     .carousel {
@@ -825,11 +861,11 @@ div.dateplace :nth-child(2) {
         transform: translateY(30vh);
     }
     #inspectornote p {
-        top: -23%;
+        top: -33%;
         font-size: 1.2rem;
     }
     #testimonies {
-        transform: translateY(30vh);
+        transform: translateY(-185vh);
     }
     #footerleft p, #footerright p {
         margin: 0%;
@@ -841,6 +877,9 @@ div.dateplace :nth-child(2) {
     #meetthecrew {
         height: 60vh;
     }
+    #notebg {
+        transform: translateY(-80vh);
+    }
     #route h1 {
         transform: translateY(-100%);
     }
@@ -850,7 +889,7 @@ div.dateplace :nth-child(2) {
 }
 
 @media screen and (max-width:576px) {
-    * {
+    *, strong {
         font-size: 0.8rem;
     }
     .carousel-indicators button.thumbnail {
@@ -914,57 +953,4 @@ div.dateplace :nth-child(2) {
     #twinmoonsblurb {
         display: block;
     }
-    
-    /*#about h2 {
-        text-align: center;
-    }
-    #about img{
-        width: 100%;
-    }
-    #abouttext {
-        width: 100%;
-    }
-    .city {
-        padding: 0%;
-        width: 100%;
-        float: none;
-    }
-    .colortext {
-        font-size: 1.2rem;
-    }
-    .fa {
-        font-size: 1.5rem;
-        padding: 3%;
-    }
-    .location {
-
-        width: 60%;
-    }
-    #logo {
-        width: 96%;
-    }
-    .merchdescrip {
-        width: 90%;
-        padding: 5%;
-    }
-    #merch3 {
-        display: block;
-    }
-    #name, #nav {
-        width: 98%;
-        margin: 1%;
-        padding-top: none;
-    }
-    .socialmedia {
-        float:none;
-        text-align: center;
-        font-size: 2rem;
-    }
-    .ticket {
-        margin: 0% 0% 2% 5%;
-        width: 50%;
-    }
-    .tourdescrip {
-        padding: 0% 20% 0% 20%;
-    }*/
 }

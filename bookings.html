@@ -41,11 +41,8 @@
 				</div>
 				<form>
 				<fieldset>
-				<div class="form-row w-100">
-					<div class="col">
+				<div class="form-row">
 					<input type="text" id="nameTextInput" class="form-control" placeholder="Full Name">
-				  </div>
-				  <div class="c">
 					<select id="departureSelect" class="form-select">
 					<option hidden>Select Departure</option>
 					  <option>Shanterill</option>
@@ -56,40 +53,54 @@
 					</select>
 				  </div>
 				</div>
-				  <div class="row w-100">
+				  <div class="row">
 					<div class="mb-3">
 						<input type="text" id="destinationTextInput" class="form-control" placeholder="Destination">
 				  	</div>
 				  </div>
-				  <!-- Button Trigger Modal -->
-				  <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">book ticket</button>
+				  
 				</fieldset>
 			  </form>
-			</div>
+			  <!-- Button Trigger Modal -->
+				  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+					book ticket
+				  </button>
 			<!-- Modal that pops up to confirm booking -->
 			<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingTicketModal" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered" role="document">
 				  <div class="modal-content">
 					<div class="modal-header">
-					  <h2 class="modal-title" id="exampleModalLongTitle">Thank you for booking!</h2>
-					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <h3 class="modal-title" id="exampleModalLongTitle">Thank you for booking!</h3>
+					  <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					  </button>
 					</div>
 					<div class="modal-body">
-					  ...
+					  Please feel free to close and refresh the page.
 					</div>
 					<div class="modal-footer">
-					  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					  <button type="button" class="btn btn-primary">Save changes</button>
+					  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 					</div>
 				  </div>
 				</div>
+			</div>
 	</header>
 
+	<div class="row">
+        <div class="col-lg-5 col-md-4 col-4"></div>
+        <div class="col-lg-2 col-md-4 col-4">
+            <a class="buttondark" href="index.html">Return</a>
+        </div>
+        <div class="col-lg-5 col-md-4 col-4"></div>
+        
+    </div>
 
+	<!-- Bootstrap's Javascript Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
 
-	<div id="footer" class="col-12 text-center">
+<footer>
+	<div id="footerbook" class="col-12 text-center">
 		<div id="footertop" class="row w-100">
 			<div id="footerleft" class="col-md-6">
 				<p class="w-100">
@@ -114,8 +125,6 @@
 			</div>
 		</div>
 	</div>
-	<!-- Bootstrap's Javascript Bundle -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+</footer>
 
 </html>
