@@ -92,36 +92,15 @@ ul {
 
 */
 /*--------------------- Classes ---------------------*/
-
-/* .colortext {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #f3d3a0;
-    font-size: 1.5rem;
-    text-align: left;
+.anecdotediv {
+    width: 65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
 }
-.comment {
-    padding: 3%;
-    margin-bottom: 3%;
-    background-color: #321821;
-    border-radius: 10px;
-    text-align: center;
+.anecdoteimage {
+    width: 100%;
+    object-fit: contain;
 }
-.dateplace {
-    width: 47%;
-    padding-right: 7%;
-    float: left;
-    clear: left;
-}
-div.dateplace :nth-child(2) {
-    margin:0%;
-}
-.fa {
-    font-size: 2rem;
-    padding: 5%;
-}*/
-
 .bgimg {
     width: 100%;
     overflow: hidden;
@@ -149,7 +128,6 @@ div.dateplace :nth-child(2) {
     padding-right: 7%;
     color: #FFFFFF;
     border-style: solid;
-    
     border-color: #FFFFFF;
 }
 .buttondark {
@@ -399,14 +377,21 @@ div.dateplace :nth-child(2) {
 #amenities {
     margin-top: 2%;
 }
+#baranecdotediv {
+    background-color: #0C1D2B;
+}
+#baranecdotediv p {
+    padding-bottom: 3%;
+    margin-top: 2%;
+}
 #barsideerror1, #barsideerror2, #barsideerror3 {
     background-color: #000000;
     font-size: 1rem;
     padding: 2%;
 }
-#barsideerror1:hover img, #barsideerror2:hover img, #barsideerror3:hover img {
+/* #barsideerror1:hover img, #barsideerror2:hover img, #barsideerror3:hover img {
     transform: translateZ(0) scale(1.02);
-}
+} */
 #bookingselect {
     display: flex;
 }
