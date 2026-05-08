@@ -27,12 +27,8 @@
 
 <body>
 	<header>
-			<div class="row w-100" id="bookingsheader">
-				<div class="col">
-					<div class="textdark">
-						<h2>The letaine</h2>
-					</div>
-				</div>
+			<div class="w-100 textdark" id="bookingsheader">
+						<h3>The letaine</h3>
 			</div>
 			<div id="bookingticket">
 				<div id="bookingselect">
@@ -41,30 +37,29 @@
 				</div>
 				<form>
 				<fieldset>
-				<div class="form-row">
+				<div class="form-row w-100">
 					<input type="text" id="nameTextInput" class="form-control" placeholder="Full Name">
+				  </div>
+				  <div class="form-row w-100">
 					<select id="departureSelect" class="form-select">
-					<option hidden>Select Departure</option>
-					  <option>Shanterill</option>
-					  <option>Frasia</option>
-					  <option>Gyrun'jir</option>
-					  <option>Tiluraen</option>
-					  <option>Riesling</option>
-					</select>
-				  </div>
-				</div>
-				  <div class="row">
-					<div class="mb-3">
+						<option hidden>Select Departure</option>
+						  <option>Shanterill</option>
+						  <option>Frasia</option>
+						  <option>Gyrun'jir</option>
+						  <option>Tiluraen</option>
+						  <option>Riesling</option>
+						</select>
 						<input type="text" id="destinationTextInput" class="form-control" placeholder="Destination">
-				  	</div>
-				  </div>
-				  
+				  	</div>				  
 				</fieldset>
+				<!-- Button Trigger Modal -->
+				<br>
+			  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
+				book ticket
+			  </button>
 			  </form>
-			  <!-- Button Trigger Modal -->
-				  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal">
-					book ticket
-				  </button>
+			  <p style="color: #4D2020;"><br>Can't pay? Consult the steward upon boarding to find alternatives.</p>
+			</div>
 			<!-- Modal that pops up to confirm booking -->
 			<div class="modal fade" id="bookingModal" tabindex="-1" role="dialog" aria-labelledby="bookingTicketModal" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered" role="document">
@@ -85,46 +80,49 @@
 				</div>
 			</div>
 	</header>
-
-	<div class="row">
-        <div class="col-lg-5 col-md-4 col-4"></div>
-        <div class="col-lg-2 col-md-4 col-4">
-            <a class="buttondark" href="index.html">Return</a>
-        </div>
-        <div class="col-lg-5 col-md-4 col-4"></div>
-        
-    </div>
+<!-- 
+	<section>
+		<div id="discoveriesdiv" class="textdark">
+			<h3>Discoveries</h3>
+			<div class="row w-100">
+				<div class="col-lg-5 col-md-4 col-4"></div>
+				<div class="col-lg-2 col-md-4 col-4">
+					<a class="buttondark" href="index.html">Return</a>
+				</div>
+		</div>	
+	</section> -->
 
 	<!-- Bootstrap's Javascript Bundle -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 <footer>
-	<div id="footerbook" class="col-12 text-center">
-		<div id="footertop" class="row w-100">
-			<div id="footerleft" class="col-md-6">
-				<p class="w-100">
-					<strong>CONTACT US</strong><br>
-					<strong>Email:</strong> <a href="mailto:letaine.corunder@gmail.com" class="stealth">letaine.corunder@gmail.com</a><br>
-					<strong>Method:</strong> <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="An Inspector Isidore went missing aboard the Letaine.">
-						A Sharp Eye
-					  </button>
-				</p>
-			</div>
-			<div id="footerright" class="col-md-6">
-				<p class="w-100">
-					<strong>ABOUT THE LETAINE</strong><br>
-					Fill the Name<br>
-					With a Prayer
-				</p>
-			</div>
+	<div id="footerbook" class="text-center">
+	<div id="footertop" class="row w-100">
+		<div id="footerleft" class="col-md-6">
+			<p class="w-100 mt-3">
+				<strong>CONTACT US</strong><br>
+						<strong>Email:</strong> <a href="mailto:letaine.corunder@gmail.com" class="stealth">letaine.corunder@gmail.com</a><br>
+						<strong>Method:</strong> <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="An Inspector Isidore went missing aboard the Letaine.">
+							A Sharp Eye
+						  </button>
+			</p>
 		</div>
-		<div id="footerbottom" class="row w-100">
-			<div class="col">
-				<p><strong>© 1XXX Corunder Company</strong></p>
-			</div>
+		<div id="footerright" class="col-md-6">
+			<p class="w-100 mt-3">
+				<strong>ABOUT THE LETAINE</strong><br>
+				Fill the Name<br>
+				With a Prayer
+			</p>
 		</div>
 	</div>
+	<div id="footerbottom" class="row w-100">
+		<div class="col-12 mt-3 mb-3">
+			<strong>© 1XXX Corunder Company</strong>
+		</div>
+	</div>
+</div>
+	
 </footer>
 
 </html>

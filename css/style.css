@@ -238,12 +238,6 @@ div.dateplace :nth-child(2) {
     margin-right: 10%;
     width: 80%;
 }
-.textdark * {
-    color: black;
-}
-.textdark h2 {
-    color: black;
-}
 .employeeicons {
     width: 100%;
     height: 100%;
@@ -292,9 +286,17 @@ div.dateplace :nth-child(2) {
     padding: 1%;
     transform: rotateY(180deg);
   }
+.form-row {
+    display: flex;
+}
 .h2 {
     text-align: center;
     font-size: 1.5rem;
+}
+.italics {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-style: italic;
 }
 .modal * {
     color: black;
@@ -353,11 +355,13 @@ div.dateplace :nth-child(2) {
     text-align: left;
     text-indent: 2rem;
 }
-.italics {
-    margin-bottom: 2%;
-    margin-top: 2%;
-    font-style: italic;
+.textdark * {
+    color: black;
 }
+.textdark h2 {
+    color: black;
+}
+
 
 @keyframes pulse {
     0% {
@@ -408,7 +412,27 @@ div.dateplace :nth-child(2) {
 }
 #bookingsheader {
     background-color: #FFFCF9;
-    padding: 2%;
+    padding-top: 2%;
+}
+#bookingticket {
+    padding-bottom: 3%;
+}
+#bookingticket button {
+    width: 20%;
+    padding: 1%;
+    text-align: center;
+    height: fit-content;
+}
+#departureSelect {
+    margin-left: 2%;
+    margin-bottom: 1%;
+    width: 31.5%;
+}
+#destinationTextInput {
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    width: 31.5%;
 }
 #employee1, #employee2, #employee3, #employee4{
     display: block;
@@ -423,7 +447,7 @@ div.dateplace :nth-child(2) {
 }
 #footer {
     position: relative;
-    transform: translateY(0vh);
+    transform: translateY(-45vh);
     width: 100%;
     background-color: black;
     z-index: 10;    
@@ -431,7 +455,9 @@ div.dateplace :nth-child(2) {
 #footerbook {
     width: 100%;
     background-color: black;
-    z-index: 10;    
+    z-index: 10;  
+    position:absolute;
+    bottom: 0;
 }
 #footerleft, #footerright {
     margin: 0%;
@@ -557,11 +583,14 @@ div.dateplace :nth-child(2) {
     margin-left: 1%;
     margin-right: 36%;
 }
+
 #nameTextInput {
     margin-left: 2%;
-    width: 62%;
-    margin-right: 36%;
+    margin-bottom: 1%;
+    width: 31.5%;
+    margin-right: 66.5%;
 }
+
 #publicationstext h1 {
     padding-bottom: 0%;
 }
@@ -587,6 +616,11 @@ div.dateplace :nth-child(2) {
     padding-left: 20%;
     padding-right: 20%;
     margin-top: 2%;
+}
+#discoveriesdiv {
+    background-color: #FFFCF9;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 #ellipses {
     color:#E2C774;
@@ -889,7 +923,7 @@ div.dateplace :nth-child(2) {
 }
 
 @media screen and (max-width:576px) {
-    *, strong {
+    *, strong, a {
         font-size: 0.8rem;
     }
     .carousel-indicators button.thumbnail {
